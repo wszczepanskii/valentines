@@ -99,8 +99,8 @@ const triggerConfetti = () => {
 
       <div v-else key="accepted" class="card accepted">
         <div class="bears">🐻🥰🐱</div>
-        <h1>Wiedziałem!</h1>
-        <p>Nie mogę się doczekać 14 lutego! Kocham Cię! ❤️</p>
+        <h1>No ja myślę!!!</h1>
+        <p>Love you miss!! ❤️</p>
         <button @click="triggerConfetti" class="btn celebrate-btn">Jeszcze raz konfetti! 🎉</button>
       </div>
     </transition>
