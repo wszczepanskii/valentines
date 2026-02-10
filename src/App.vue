@@ -7,7 +7,7 @@ const photos = [
   {
     url: `${import.meta.env.BASE_URL}img/img1.jpeg`,
     caption: 'Tak się zaczęło... 💕',
-    date: '2022-06-01 (nie mam żadnego zdjecia z tego dnia, ale to pierwsze nasze wspólne zdjęcie, więc musi być na pierwszym miejscu!)',
+    date: '2022-06-01 (nie mam żadnego zdjecia z tego dnia, ale to pierwsze nasze wspólne zdjęcie, więc musi być na pierwszym miejscu)',
   },
   {
     url: `${import.meta.env.BASE_URL}img/img2.jpeg`,
@@ -57,7 +57,7 @@ const photos = [
   {
     url: `${import.meta.env.BASE_URL}img/img10.jpeg`,
     caption: 'No i pyszny kebabik 🌯',
-    date: '2022-09-07',
+    date: '2025-09-07',
   },
   {
     url: `${import.meta.env.BASE_URL}img/img12.jpeg`,
@@ -271,7 +271,6 @@ const triggerConfetti = () => {
 .container.main-content {
   text-align: center;
   width: 100%;
-  max-width: 600px;
   padding: 20px;
   position: relative; /* Ważne dla z-index */
   z-index: 1;
@@ -286,6 +285,10 @@ const triggerConfetti = () => {
   backdrop-filter: blur(5px); /* Efekt rozmycia tła pod kartą */
 }
 
+.accepted{
+  padding-bottom: 70px;
+}
+
 h1 {
   font-family: 'Pacifico', cursive;
   color: #d32f2f;
@@ -296,7 +299,7 @@ h1 {
 p {
   font-size: 1.2rem;
   color: #555;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 /* Zmieniłem nazwę klasy na heart-main, żeby nie gryzła się z tłem */
@@ -400,11 +403,9 @@ p {
   width: 100%;
   height: 100%;
   object-fit: contain; /* cover = przycina, żeby wypełnić; contain = pokazuje całe zdjęcie z pasami */
-  border-radius: 4px;
   position: absolute;
   top: 0;
   left: 0;
-  padding: 10px; /* To musi pasować do paddingu kontenera */
   box-sizing: border-box;
 }
 
